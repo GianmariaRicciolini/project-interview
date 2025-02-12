@@ -1,0 +1,400 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:wght@100..900&display=swap");
+
+.App {
+  background-color: black;
+  color: #fbf4e6;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #010d10;
+  min-height: 100vh;
+  max-width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* COMPONENT PROJECT */
+
+/* Button */
+
+.btn {
+  max-width: 103;
+  max-height: 25;
+  top: 20px;
+  left: 20px;
+
+  border-radius: 6px;
+  border-width: 2px;
+
+  gap: 6px;
+  padding-top: 3px;
+  padding-right: 7px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+
+  background-color: transparent;
+  border: 2px solid #fbf4e6;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.btn p {
+  margin: 0;
+  max-width: 103;
+  max-height: 25;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fbf4e6;
+  line-height: 18.75px;
+  letter-spacing: -1.7%;
+  text-transform: uppercase;
+}
+
+.btn img {
+  width: 14.000000000000053;
+  /* angle: -0 deg; */
+  border-width: 2px;
+}
+
+.btn:hover {
+  border-color: #fcbf49;
+}
+
+.btn p:hover {
+  font-size: 17px;
+  line-height: 19.92px;
+}
+
+/* Hero Section */
+
+.landingPage {
+  max-width: 1154px;
+  margin: 0 auto;
+  height: 615px;
+  left: -1px;
+  background: linear-gradient(rgba(5, 33, 48, 0.82), rgba(5, 33, 48, 0.82)), url("../src/Assets/Img/iStock.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.heroSection {
+  max-width: 1154px;
+  left: -1px;
+  padding: 0em 2em;
+  padding-bottom: 3.5em;
+  display: flex;
+  align-items: flex-start;
+}
+
+.heroSection h1 {
+  margin: 0;
+  padding-left: 3.5em;
+  padding-right: 0.7em;
+
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 52.8px;
+  letter-spacing: -2%;
+  color: #fbf4e6;
+  text-align: left;
+}
+
+.textSection {
+  text-align: left;
+  padding-right: 2em;
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+/* .heroSection div {
+  padding-left: 0.8em;
+  padding-right: 3.2em;
+} */
+
+.textSection h3 {
+  margin-top: 0;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17.58px;
+  letter-spacing: 3%;
+  color: #fcbf49;
+}
+
+.textSection p {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+
+  padding-bottom: 2.5em;
+}
+
+.textSection .btn p {
+  padding: 0;
+}
+
+/* Nav */
+
+.navContainer {
+  width: 1154;
+  height: 615;
+  left: -1px;
+}
+
+.sizeNav {
+  max-width: 100%;
+  padding: 2.5em 3.5em;
+  left: -1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #042131 0%, rgba(5, 33, 48, 0) 100%);
+}
+
+.sizeNav h3 {
+  max-width: 128;
+  max-height: 21;
+  top: 88px;
+  left: 135px;
+  margin: 0;
+
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 3%;
+  color: #fbf4e6;
+}
+
+.sizeNav p {
+  max-width: 50;
+  max-height: 13;
+  top: 92px;
+  left: 553px;
+  margin: 0;
+
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.sizeNav p span {
+  /* margin: 0; */
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.sizeNav div {
+  /* margin: 0; */
+  max-width: 239;
+  max-height: 27;
+  top: 84px;
+  left: 790.5px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  font-family: Font Awesome 5 Brands;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24.6px;
+  letter-spacing: 71.5%;
+  text-align: right;
+}
+
+/* Biography */
+
+.biography {
+  max-width: 1154px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.biography h2 {
+  padding: 1em;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.13px;
+  letter-spacing: -1.7%;
+  text-align: center;
+  color: #fbf4e6;
+}
+
+.blockText {
+  text-align: center;
+  max-width: 732px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5em;
+}
+
+.blockText .btn {
+  max-width: fit-content;
+  margin-bottom: 3em;
+}
+
+.blockText {
+  text-align: center;
+  max-width: 732px;
+  max-height: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5em;
+
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+  pointer-events: none;
+}
+
+.textColumn {
+  max-width: 375px;
+  text-align: left;
+  margin: 0 auto;
+
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+
+.moreText {
+  display: flex;
+  gap: 0.5em;
+}
+
+.lessButton {
+  align-self: flex-end;
+  margin: 0 0.5em 0.5em 0;
+}
+
+/* Expertise Section */
+
+.expertise-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1154px;
+  overflow: hidden;
+}
+
+.expertise-container h2 {
+  padding: 1em;
+
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.13px;
+  letter-spacing: -1.7%;
+  text-align: center;
+}
+
+.expertise-row {
+  display: flex;
+  width: 100%;
+  height: 385px;
+}
+
+.box {
+  max-width: 33.33%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+}
+
+.box-text p {
+  position: relative;
+  display: inline;
+  padding: 0;
+
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 47.48px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  color: #ffffff;
+
+  background-color: black;
+}
