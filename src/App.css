@@ -7,17 +7,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #010d10;
   min-height: 100vh;
@@ -30,19 +19,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
   overflow: hidden;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /* COMPONENT PROJECT */
@@ -90,17 +66,15 @@
   max-width: 1154px;
   margin: 0 auto;
   height: auto;
-  left: -1px;
   background: linear-gradient(rgba(5, 33, 48, 0.82), rgba(5, 33, 48, 0.82)), url("../src/Assets/Img/iStock.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .heroSection {
-  max-width: 1154px;
-  left: -1px;
   padding: 0em 2em;
   padding-bottom: 3.5em;
+  margin: 1em 0;
   display: flex;
   align-items: flex-start;
 }
@@ -114,7 +88,6 @@
   font-weight: 400;
   font-size: 3rem;
   line-height: 52.8px;
-  letter-spacing: -2%;
   color: #fbf4e6;
   text-align: left;
 }
@@ -159,7 +132,6 @@
 .sizeNav {
   max-width: 100%;
   padding: 2.5em 3.5em;
-  left: -1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,52 +139,32 @@
 }
 
 .sizeNav h3 {
-  max-width: 128;
-  max-height: 21;
-  top: 88px;
-  left: 135px;
   margin: 0;
 
   font-family: "Roboto", serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 18.75px;
-  letter-spacing: 3%;
   color: #fbf4e6;
 }
 
 .sizeNav p {
-  max-width: 50;
-  max-height: 13;
-  top: 92px;
-  left: 553px;
   margin: 0;
 
   font-family: "Roboto", serif;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16.41px;
-  letter-spacing: 0%;
   text-align: center;
 }
 
 .sizeNav p span {
-  /* margin: 0; */
   font-family: "Roboto", serif;
   font-weight: 300;
   font-size: 14px;
-  line-height: 16.41px;
-  letter-spacing: 0%;
+
   text-align: center;
 }
 
 .sizeNav div {
-  /* margin: 0; */
-  max-width: 239;
-  max-height: 27;
-  top: 84px;
-  left: 790.5px;
-
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -220,8 +172,6 @@
   font-family: Font Awesome 5 Brands;
   font-weight: 400;
   font-size: 15px;
-  line-height: 24.6px;
-  letter-spacing: 71.5%;
   text-align: right;
 }
 
@@ -234,7 +184,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .biography h2 {
@@ -242,9 +191,6 @@
   font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28.13px;
-  letter-spacing: -1.7%;
-  text-align: center;
   color: #fbf4e6;
 }
 
@@ -254,7 +200,6 @@
 }
 
 .blockText {
-  text-align: center;
   max-width: 732px;
   max-height: auto;
 
@@ -262,11 +207,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   gap: 0.5em;
 
-  opacity: 1;
   overflow: hidden;
+
+  opacity: 1;
   transition: opacity 1s ease-in-out;
 }
 
@@ -314,8 +259,6 @@
   font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28.13px;
-  letter-spacing: -1.7%;
   text-align: center;
 }
 
@@ -349,7 +292,6 @@
 
 .box-text.hidden {
   top: 43.5%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -361,7 +303,7 @@
   font-family: "Roboto Slab", serif;
   font-weight: 500;
   font-size: 34px;
-  line-height: 47.48px;
+  line-height: 50px;
   letter-spacing: 0%;
   text-align: center;
 
@@ -374,16 +316,19 @@
   position: absolute;
   top: 0;
   right: -100%;
+  transition: right 0.5s ease-in-out;
+
   width: 100%;
   height: 100%;
+
   background: #51686f;
   color: white;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: right 0.5s ease-in-out;
 }
 
 .box-hover-menu.show {
@@ -391,7 +336,6 @@
 }
 
 .box-hover-menu.show p {
-  letter-spacing: 0%;
   text-align: center;
   font-family: Roboto;
 }
@@ -422,7 +366,6 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 28.13px;
-  letter-spacing: -1.7%;
   text-align: center;
   text-transform: uppercase;
   padding: 2em;
@@ -497,7 +440,7 @@ ul {
 /* footer */
 
 .footerLayout {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #042131 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #010a0f 40%, #020f16 60%, #042131 100%);
   width: 1154px;
   display: block;
 }
@@ -518,7 +461,6 @@ ul {
   font-weight: 400;
   font-size: 13px;
   line-height: 15.23px;
-  letter-spacing: 0%;
   text-align: center;
 }
 
@@ -526,7 +468,6 @@ ul {
   font-weight: 700;
   font-size: 15px;
   line-height: 17.58px;
-  letter-spacing: 3%;
 }
 
 .footerIconLayout {
@@ -541,14 +482,10 @@ ul {
   font-weight: 400;
   font-size: 12px;
   line-height: 14.06px;
-  letter-spacing: 0%;
   text-align: center;
+
   margin-bottom: 2em;
 
-  width: 526.543701171875;
-  height: 33;
-  top: 168px;
-  left: 309.23px;
   opacity: 0.27;
 }
 
@@ -603,11 +540,9 @@ ul {
     margin-top: 3em;
     padding: 3em 0;
 
-    font-family: Font Awesome 5 Brands;
     font-weight: 400;
     font-size: 19px;
     line-height: 31.16px;
-    letter-spacing: 57%;
   }
 
   /* Biography */
@@ -733,11 +668,9 @@ ul {
     width: 40%;
     margin: 3em auto 2em auto;
 
-    font-family: Font Awesome 5 Brands;
     font-weight: 400;
     font-size: 19px;
     line-height: 31.16px;
-    letter-spacing: 79%;
     text-align: center;
   }
 
@@ -746,7 +679,6 @@ ul {
     font-weight: 400;
     font-size: 11px;
     line-height: 12.89px;
-    letter-spacing: 0%;
     text-align: center;
 
     opacity: 0.27;
