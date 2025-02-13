@@ -528,3 +528,55 @@ ul {
   margin: auto;
   border: 1px solid #fcbf49;
 }
+
+/* footer */
+
+.footer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #042131 100%);
+  width: 1154px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em 0;
+  margin-top: 2em;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15.23px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.contact h4 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17.58px;
+  letter-spacing: 3%;
+}
+
+.contact div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.rights {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 2em;
+
+  width: 526.543701171875;
+  height: 33;
+  top: 168px;
+  left: 309.23px;
+  opacity: 0.27;
+}
