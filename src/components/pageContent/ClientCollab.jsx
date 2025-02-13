@@ -10,25 +10,18 @@ function ClientCollab() {
             <ul className="marquee__content">
               <p>Laurence</p>
               <div className="bar"></div>
-
               <p>Italy</p>
               <div className="bar"></div>
-
               <p>Wood</p>
               <div className="bar"></div>
-
               <p>Vogue</p>
               <div className="bar"></div>
-
               <p>Klee</p>
               <div className="bar"></div>
-
               <p>Kless</p>
               <div className="bar"></div>
-
               <p>Rik</p>
               <div className="bar"></div>
-
               <p>Eco</p>
               <div className="bar"></div>
             </ul>
@@ -36,25 +29,18 @@ function ClientCollab() {
             <ul className="marquee__content">
               <p>Laurence</p>
               <div className="bar"></div>
-
               <p>Italy</p>
               <div className="bar"></div>
-
               <p>Wood</p>
               <div className="bar"></div>
-
               <p>Vogue</p>
               <div className="bar"></div>
-
               <p>Klee</p>
               <div className="bar"></div>
-
               <p>Kless</p>
               <div className="bar"></div>
-
               <p>Rik</p>
               <div className="bar"></div>
-
               <p>Eco</p>
               <div className="bar"></div>
             </ul>

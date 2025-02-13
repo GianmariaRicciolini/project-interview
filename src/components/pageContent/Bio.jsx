@@ -15,7 +15,7 @@ function Bio() {
           nulla nec imperdiet.
         </p>
 
-        <button className="btn" onClick={() => setIsExpanded(true)}>
+        <button className="btn moreButton" onClick={() => setIsExpanded(true)}>
           <p>read more</p>
         </button>
       </div>

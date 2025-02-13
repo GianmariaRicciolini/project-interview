@@ -106,7 +106,7 @@
 .landingPage {
   max-width: 1154px;
   margin: 0 auto;
-  height: 615px;
+  height: auto;
   left: -1px;
   background: linear-gradient(rgba(5, 33, 48, 0.82), rgba(5, 33, 48, 0.82)), url("../src/Assets/Img/iStock.jpg");
   background-size: cover;
@@ -143,10 +143,9 @@
   margin-bottom: 0;
 }
 
-/* .heroSection div {
-  padding-left: 0.8em;
-  padding-right: 3.2em;
-} */
+.mobileIcon {
+  display: none;
+}
 
 .textSection h3 {
   margin-top: 0;
@@ -173,12 +172,6 @@
 }
 
 /* Nav */
-
-.navContainer {
-  width: 1154;
-  height: 615;
-  left: -1px;
-}
 
 .sizeNav {
   max-width: 100%;
@@ -272,17 +265,6 @@
   color: #fbf4e6;
 }
 
-.blockText {
-  text-align: center;
-  max-width: 732px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 0.5em;
-}
-
 .blockText .btn {
   max-width: fit-content;
   margin-bottom: 3em;
@@ -291,7 +273,7 @@
 .blockText {
   text-align: center;
   max-width: 732px;
-  max-height: 1000px;
+  max-height: auto;
 
   display: flex;
   flex-direction: column;
@@ -481,7 +463,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* gap: var(--gap); */
+  gap: var(--gap);
   min-width: 100%;
   margin: 0.2em;
   margin-inline: 0;
@@ -531,15 +513,21 @@ ul {
 
 /* footer */
 
-.footer {
+.footerLayout {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #042131 100%);
   width: 1154px;
+  display: block;
+}
+
+.footerMobile {
+  display: none;
 }
 
 .contact {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 3em;
   padding: 2em 0;
   margin-top: 2em;
 
@@ -558,11 +546,11 @@ ul {
   letter-spacing: 3%;
 }
 
-.contact div {
+.footerIconLayout {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 15%;
+  gap: 3em;
 }
 
 .rights {
@@ -579,4 +567,203 @@ ul {
   top: 168px;
   left: 309.23px;
   opacity: 0.27;
+}
+
+/* MediaQuery */
+
+@media (max-width: 1154px) {
+  .landingPage,
+  .heroSection,
+  .biography,
+  .clientAndCollab,
+  .expertise-container {
+    max-width: 421px;
+    margin-inline: 0;
+    overflow: hidden;
+  }
+
+  /* LandingPage */
+
+  .sizeNav {
+    padding: 2em 1em 4em 1em;
+  }
+
+  .sizeNav div {
+    display: none;
+  }
+
+  .heroSection {
+    padding: 0;
+    padding-left: 1em;
+    flex-direction: column;
+  }
+
+  .heroSection h1 {
+    padding: 0;
+    padding-right: 2em;
+    margin-bottom: 1em;
+  }
+
+  .textSection {
+    text-align: left;
+    padding-right: 4em;
+    margin: 0;
+  }
+
+  .textSection p {
+    padding: 0;
+  }
+
+  .mobileIcon {
+    display: flex;
+    gap: 1.5em;
+    margin-top: 3em;
+    padding: 3em 0;
+
+    font-family: Font Awesome 5 Brands;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 31.16px;
+    letter-spacing: 57%;
+  }
+
+  /* Biography */
+
+  .biography {
+    max-width: 1154px;
+    margin: 2em 0;
+    display: block;
+  }
+
+  .biography h2 {
+    padding: 0;
+    text-align: start;
+  }
+
+  .blockText {
+    max-width: 732px;
+    justify-content: flex-start;
+    gap: 0.5em;
+  }
+
+  .moreButton {
+    align-self: flex-start;
+    margin: 1em 0 5em 0;
+  }
+
+  .textColumn {
+    max-width: 360px;
+  }
+
+  .moreText {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .lessButton {
+    align-self: flex-end;
+    margin: 0 0.5em 0.5em 0;
+  }
+
+  /* Expertise */
+
+  .expertise-container {
+    display: block;
+  }
+
+  .expertise-container h2 {
+    text-align: start;
+  }
+
+  .expertise-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .box-image {
+    width: 100%;
+  }
+  /* CLIENTS & COLLAB */
+
+  .clientAndCollab h2 {
+    margin-bottom: 0;
+  }
+
+  /* Marquee styles */
+  .marquee {
+    --gap: 0.5rem;
+  }
+
+  .marquee__content {
+    gap: var(--gap);
+  }
+
+  .marquee__content p {
+    margin: 0.2em 0;
+  }
+
+  /* footer */
+
+  .footerLayout {
+    display: none;
+  }
+
+  .footerMobile {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #042131 100%);
+    display: block;
+    width: 420px;
+  }
+  .contact {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact p {
+    color: #fbf4e6;
+    opacity: 0.5;
+    padding: 0.5em 0;
+  }
+
+  .contact h4 {
+    margin-bottom: 0;
+  }
+
+  .footerBar {
+    border: 1px solid #ffffff;
+    width: 80%;
+    margin: 0.5em auto;
+  }
+
+  .footerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: 3em auto 2em auto;
+
+    font-family: Font Awesome 5 Brands;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 31.16px;
+    letter-spacing: 79%;
+    text-align: center;
+  }
+
+  .rights {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12.89px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    opacity: 0.27;
+  }
 }
