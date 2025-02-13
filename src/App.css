@@ -378,8 +378,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: opacity 0.6s ease-in-out;
+  z-index: 0;
+}
 
-  z-index: 2;
+.box-text.hidden {
+  top: 43.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .box-text p {
@@ -397,4 +403,128 @@
   color: #ffffff;
 
   background-color: black;
+}
+
+.box-hover-menu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #51686f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: right 0.5s ease-in-out;
+}
+
+.box-hover-menu.show {
+  right: 0;
+}
+
+.box-hover-menu.show p {
+  letter-spacing: 0%;
+  text-align: center;
+  font-family: Roboto;
+}
+
+.hoverTitle {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.hoverContent {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.44px;
+  padding: 0 2em;
+}
+
+/* CLIENTS & COLLAB */
+
+.clientAndCollab {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 1154px;
+}
+
+.clientAndCollab h2 {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.13px;
+  letter-spacing: -1.7%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2em;
+}
+
+/* Marquee styles */
+.marquee {
+  --gap: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  border: 2px solid #fcbf49;
+  border-inline: 0;
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: var(--gap); */
+  min-width: 100%;
+  margin: 0.2em;
+  margin-inline: 0;
+  color: #fcbf49;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.marquee__content p {
+  margin: 0;
+  font-family: Roboto Slab;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.marquee__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.enable-animation .marquee__content {
+  animation: scroll 10s linear infinite;
+}
+
+.bar {
+  width: 8px;
+  margin: auto;
+  border: 1px solid #fcbf49;
 }

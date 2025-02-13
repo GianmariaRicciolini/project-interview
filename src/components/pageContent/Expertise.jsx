@@ -14,7 +14,13 @@ function Expertise() {
       <h2>EXPERTISE</h2>
 
       <div className="expertise-row">
-        <Box imageSrc={Biennale} title="Art Curator" />
+        <Box
+          imageSrc={Biennale}
+          title="Art Curator"
+          hoverTitle="2020-22"
+          hoverContent="Founder, art director, exhibition coordinator, Director of the Contemporary Art Institute of Lisbon, Portugal, and curator for the Scandinavian Pavilion at the 2023 Venice Art Biennale."
+          isHoverEnabled={true}
+        />
         <Box imageSrc={Managing} title="Managing" />
         <Box imageSrc={Politics} title="Politics and Journalism" />
       </div>
