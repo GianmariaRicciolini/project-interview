@@ -1,10 +1,10 @@
 import React from "react";
-import Biennale from "../../Assets/Img/logo.jpg";
-import Managing from "../../Assets/Img/Manag.jpg";
-import Politics from "../../Assets/Img/polAndJourn.jpg";
-import Editing from "../../Assets/Img/editing.jpg";
-import Strategic from "../../Assets/Img/strategic.jpg";
-import StratUp from "../../Assets/Img/startUP.jpg";
+import Biennale from "../Assets/Img/logo.jpg";
+import Managing from "../Assets/Img/Manag.jpg";
+import Politics from "../Assets/Img/polAndJourn.jpg";
+import Editing from "../Assets/Img/editing.jpg";
+import Strategic from "../Assets/Img/strategic.jpg";
+import StratUp from "../Assets/Img/startUP.jpg";
 
 import Box from "./Box";
 

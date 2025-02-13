@@ -1,15 +1,14 @@
-// import MyNav from "./components/MyNav";
-import ClientCollab from "./components/pageContent/ClientCollab";
-import HeroSection from "./components/pageContent/HeroSection";
-import Expertise from "./components/pageContent/Expertise";
-import Bio from "./components/pageContent/Bio";
+import ClientCollab from "./components/ClientCollab";
+import HeroSection from "./components/HeroSection";
+import Expertise from "./components/Expertise";
+import Bio from "./components/Bio";
 import MyFooter from "./components/MyFooter";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
+      <div className="App-body">
         <HeroSection />
         <Bio />
         <Expertise />
