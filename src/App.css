@@ -698,7 +698,7 @@ ul {
   }
 
   .footerMobile {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #042131 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #010a0f 40%, #020f16 60%, #042131 100%);
     display: block;
     width: 420px;
   }
@@ -706,6 +706,7 @@ ul {
     display: block;
     width: 100%;
     margin: 0 auto;
+    padding: 1.5em 0;
   }
 
   .contact p {
@@ -715,6 +716,7 @@ ul {
   }
 
   .contact h4 {
+    margin-top: 5em;
     margin-bottom: 0;
   }
 
