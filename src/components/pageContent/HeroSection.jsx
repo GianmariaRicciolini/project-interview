@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faYoutube, faLinkedin, faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import Arrow from "../../Assets/Png/Line9.png";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function HeroSection() {
   return (
@@ -31,7 +31,7 @@ function HeroSection() {
             </div>
             <button className="btn">
               <p>discover</p>
-              <img src={Arrow} alt="Arrow Icon" />
+              <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
           <div className="mobileIcon">

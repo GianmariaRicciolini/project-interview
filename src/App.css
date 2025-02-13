@@ -50,19 +50,12 @@
 /* Button */
 
 .btn {
-  max-width: 103;
-  max-height: 25;
-  top: 20px;
-  left: 20px;
-
   border-radius: 6px;
   border-width: 2px;
 
   gap: 6px;
-  padding-top: 3px;
-  padding-right: 7px;
-  padding-bottom: 3px;
-  padding-left: 7px;
+  padding: 0.1em 0.5em;
+  color: #fbf4e6;
 
   background-color: transparent;
   border: 2px solid #fbf4e6;
@@ -71,37 +64,27 @@
   align-items: center;
 
   cursor: pointer;
+
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 18.75px;
+  letter-spacing: -1.7%;
+  text-transform: uppercase;
+
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .btn p {
   margin: 0;
-  max-width: 103;
-  max-height: 25;
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #fbf4e6;
-  line-height: 18.75px;
-  letter-spacing: -1.7%;
-  text-transform: uppercase;
-}
-
-.btn img {
-  width: 14.000000000000053;
-  /* angle: -0 deg; */
-  border-width: 2px;
 }
 
 .btn:hover {
   border-color: #fcbf49;
-}
 
-.btn p:hover {
-  font-size: 17px;
-  line-height: 19.92px;
+  transform: scale(1.1);
 }
-
-/* Hero Section */
 
 .landingPage {
   max-width: 1154px;
